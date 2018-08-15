@@ -1,6 +1,6 @@
 var csv = require("fast-csv");
 const ObjectsToCsv = require('objects-to-csv');
-const account = require('./bin/account.js').default;
+const account = require('./bin/account.js');
 
 
 const contapath = process.argv.slice(2)[0];
