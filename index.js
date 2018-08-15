@@ -18,22 +18,22 @@ async function printCsv(data) {
 
 csv
     .fromPath(contapath)
-    .on("data", function(data) {
+    .on("data", function (data) {
         if (data[0] != 'null' && data[1] != 'null') {
             accounts.push(new account(data[0], data[1]));
         }
 
 
     })
-    .on("end", function() {
+    .on("end", function () {
         csv
             .fromPath(transacaopath)
-            .on("data", function(data) {
+            .on("data", function (data) {
                 if (data[0] != 'null' && data[1] != 'null') {
                     transactions.push(new account(data[0], data[1]));
                 }
             })
-            .on("end", function() {
+            .on("end", function () {
 
                 for (var index = 0; index < transactions.length; index++) {
                     let ac = accounts.find(o => o.account === transactions[index].account);

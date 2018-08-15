@@ -1,11 +1,11 @@
 
 const transaction = require('../bin/transaction.js');
 
-describe("Teste de transação bancaria", function () {
+var assert = require('assert');
+describe('transacões bancarias', function () {
 
-    it('valida credito na conta', function (done) {
-        expect(transaction.calc(10, 100, true)).toMatch(500);      
-        done();  
+    it('Valida credito', function () {
+        expect(transaction.calc(100,110,true)).to.equal(115);
     });
 
 });
