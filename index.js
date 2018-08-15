@@ -38,7 +38,11 @@ csv
                 for (var index = 0; index < transactions.length; index++) {
                     let ac = accounts.find(o => o.account === transactions[index].account);
                     if (ac != null) {
-                        ac.balance = transaction.calc(ac.balance, transactions[index].balance);
+                        if ((parseInt(ac.balance) + parseInt(transactions[index].balance)) < 0) {
+                            ac.balance = transaction.calc(ac.balance, transactions[index].balance, true);
+                        } else if (ac.account == transactions[index].account) {
+                            ac.balance = transaction.calc(parseInt(ac.balance), parseInt(transactions[index].balance), false);
+                        }
                     }
 
                 };

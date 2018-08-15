@@ -1,10 +1,9 @@
 class transaction {
-    calc(acVal, transVal) {
-        
+    calc(acVal, transVal, isdebit) {
         let result = parseInt(acVal) + parseInt(transVal)
 
-        if (transVal.toString().indexOf('-') !== -1) {
-            return result - 500;
+        if (isdebit === true) {
+          return  result - 500;           
         }
         return result;
     }
