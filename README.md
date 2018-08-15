@@ -10,6 +10,5 @@ Após clonar o projeto, execute o comando `npm i` para importar as bibliotecas d
 
 O projeto tem uma pasta chamada files com dois arquivos: contas.csv e transacoes.csv, para importar elas e validar as regras de negócio, execute o comando  `node .\index.js .\files\contas.csv .\files\transacoes.csv` no seu terminal.
 
-Abaixo você tem uma imagem demonstrando o passo anterior:
 
-![alt text](https://drive.google.com/file/d/1KspxluyQctgogj-8ZRC3dsUCGmfjYwvO/view?usp=sharing)
+[Click aqui para ver o resultado do passo anterior ](https://drive.google.com/file/d/1KspxluyQctgogj-8ZRC3dsUCGmfjYwvO/view?usp=sharing)

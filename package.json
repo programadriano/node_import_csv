@@ -2,13 +2,15 @@
   "name": "noverde",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "jasmine-node": "^1.15.0"
+  },
   "devDependencies": {
     "fast-csv": "^2.4.1",
     "objects-to-csv": "^1.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/jasmine-node ./spec"
   },
   "keywords": [],
   "author": "",
