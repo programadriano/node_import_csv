@@ -5,7 +5,7 @@ const transaction = require('../bin/transaction.js');
 var assert = require('assert');
 describe('transacões bancarias', function () {
 
-    it('Valida credito', function () {
+    it('Valida crédito', function () {
         expect(transaction.calc(100, 100, false)).to.equal(200);
     });
 
